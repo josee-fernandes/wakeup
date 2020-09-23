@@ -12,6 +12,20 @@
               <ion-label>{{ p.title }}</ion-label>
             </ion-item>
           </ion-menu-toggle>
+
+          <ion-menu-toggle>
+            <ion-item lines="none" details="false" (click)="selectedIndex = 7" routerDirection="root" [routerLink]="['/contato']" [class.selected]="selectedIndex == 7">
+              <ion-icon slot="end" name="people-circle"></ion-icon>
+              <ion-label>Contato</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle>
+            <ion-item lines="none" details="false" (click)="selectedIndex = 8" routerDirection="root" [routerLink]="['/escolhas']" [class.selected]="selectedIndex == 8">
+              <ion-icon slot="start" name="trail-sign"></ion-icon>
+              <ion-label>Escolhas</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
         </ion-list>
 
         <ion-list id="labels-list">
